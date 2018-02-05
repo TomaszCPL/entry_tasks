@@ -8,7 +8,7 @@ from collections import Counter
 #However, the way it is constructed for phrases(in order to avoid overlapping) is to sort it by the length of a key.
 #So it can meet some problems if there is no direct relationship between length of phrases and their value.
 
-def passwordCalculator(password):
+def hack_calculator(password):
     letters = {"a":1,"b":2,"c":3}
     for letter in list(password):
         if letter not in letters:
