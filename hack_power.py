@@ -10,6 +10,10 @@ from collections import Counter
 
 def passwordCalculator(password):
     letters = {"a":1,"b":2,"c":3}
+    for letter in list(password):
+        if letter not in letters:
+            return ("Invalid hack")
+        
     phrases = {"baa": 20, "ba": 10}
     hackPower = 0
     counter = Counter(list(password))
